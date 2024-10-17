@@ -18,7 +18,7 @@ RUN apt-get update \
     && /usr/local/bin/python -m pip install --no-cache --upgrade pip \
     && pip install --no-cache -r requirements.txt \
     && pip install --no-cache -r requirements-optional.txt \
-    && pip install azure-cognitiveservices-speech
+    && pip install azure-cognitiveservices-speech \
     && pip install pypng
 
 WORKDIR ${BUILD_PREFIX}
